@@ -32,7 +32,7 @@ function PendingTx () {
 
 PendingTx.prototype.render = function () {
   const props = this.props
-  const { currentCurrency, blockGasLimit } = props
+  const { network, currentCurrency, blockGasLimit } = props
 
   const conversionRate = props.conversionRate
   const txMeta = this.gatherTxMeta()
@@ -135,6 +135,7 @@ PendingTx.prototype.render = function () {
                   currentCurrency,
                   inline: true,
                   labelColor: '#F7861C',
+                  network: network,
                 }),
               ]),
             ]),

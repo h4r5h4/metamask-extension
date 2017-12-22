@@ -143,7 +143,7 @@ BuyButtonSubview.prototype.primarySubview = function () {
     case '4':
     case '42':
       const networkName = networkNames[network]
-      const label = `${networkName} Test Faucet`
+      const label = `${networkName} Test Faucset`
       return (
         h('div.flex-column', {
           style: {
@@ -166,6 +166,23 @@ BuyButtonSubview.prototype.primarySubview = function () {
               },
             }, 'Borrow With Dharma (Beta)')
           ) : null,
+      ])
+    )
+
+    case '99':
+      return (
+        h('div.flex-column', {
+          style: {
+            alignItems: 'center',
+            margin: '20px 50px',
+          },
+        }, [
+          h('button.text-transform-uppercase', {
+            onClick: () => this.props.dispatch(actions.buyEth({ network })),
+            style: {
+              marginTop: '15px',
+            },
+          }, 'POA Network'),
       ])
     )
 

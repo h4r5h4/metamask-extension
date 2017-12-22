@@ -44,7 +44,7 @@ TransactionListItem.prototype.render = function () {
 
   let isLinkable = false
   const numericNet = parseInt(network)
-  isLinkable = numericNet === 1 || numericNet === 3 || numericNet === 4 || numericNet === 42
+  isLinkable = numericNet === 1 || numericNet === 3 || numericNet === 4 || numericNet === 42 || numericNet === 99
 
   var isMsg = ('msgParams' in transaction)
   var isTx = ('txParams' in transaction)
@@ -116,6 +116,7 @@ TransactionListItem.prototype.render = function () {
           width: '55px',
           shorten: true,
           showFiat: false,
+          network: network,
           style: {fontSize: '15px'},
         }) : h('.flex-column'),
       ]),

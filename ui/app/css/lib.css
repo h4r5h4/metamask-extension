@@ -191,7 +191,11 @@ hr.horizontal-line {
   border: 3px solid #690496;
 }
 
-.golden-square {
+.golden-sqquare {
+  background: #EBB33F;
+}
+
+.golden-triangle {
   background: #EBB33F;
 }
 

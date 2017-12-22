@@ -316,9 +316,26 @@ App.prototype.renderNetworkDropdown = function () {
         },
       },
       [
-        h('.menu-icon.golden-square'),
+        h('.menu-icon.golden-triangle'),
         'Rinkeby Test Network',
         providerType === 'rinkeby' ? h('.check', '✓') : null,
+      ]
+    ),
+
+    h(
+      DropdownMenuItem,
+      {
+        key: 'poa',
+        closeMenu: () => this.setState({ isNetworkMenuOpen: !isOpen }),
+        onClick: () => props.dispatch(actions.setProviderType('poa')),
+        style: {
+          fontSize: '18px',
+        },
+      },
+      [
+        h('.menu-icon.golden-triangle'),
+        'POA Network',
+        providerType === 'poa' ? h('.check', '✓') : null,
       ]
     ),
 
@@ -640,6 +657,8 @@ App.prototype.getNetworkName = function () {
     name = 'Kovan Test Network'
   } else if (providerName === 'rinkeby') {
     name = 'Rinkeby Test Network'
+  } else if (providerName === 'poa') {
+    name = 'POA Network'
   } else {
     name = 'Unknown Private Network'
   }
