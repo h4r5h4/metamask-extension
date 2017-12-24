@@ -191,12 +191,12 @@ hr.horizontal-line {
   border: 3px solid #690496;
 }
 
-.golden-sqquare {
+.golden-square {
   background: #EBB33F;
 }
 
-.golden-triangle {
-  background: #EBB33F;
+.blue-triangle-up {
+  background: #5653A1;
 }
 
 .pending-dot {

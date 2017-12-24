@@ -101,7 +101,7 @@ Network.prototype.render = function () {
             ])
           case 'rinkeby-test-network':
             return h('.network-indicator', [
-              h('.menu-icon.golden-triangle'),
+              h('.menu-icon.golden-square'),
               h('.network-name', {
                 style: {
                   color: '#e7a218',
@@ -111,7 +111,7 @@ Network.prototype.render = function () {
             ])
           case 'poa-network':
             return h('.network-indicator', [
-              h('.menu-icon.golden-triangle'),
+              h('.menu-icon.blue-triangle-up'),
               h('.network-name', {
                 style: {
                   color: '#676f8a',

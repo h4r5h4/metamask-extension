@@ -316,7 +316,7 @@ App.prototype.renderNetworkDropdown = function () {
         },
       },
       [
-        h('.menu-icon.golden-triangle'),
+        h('.menu-icon.golden-square'),
         'Rinkeby Test Network',
         providerType === 'rinkeby' ? h('.check', '✓') : null,
       ]
@@ -333,7 +333,7 @@ App.prototype.renderNetworkDropdown = function () {
         },
       },
       [
-        h('.menu-icon.golden-triangle'),
+        h('.menu-icon.blue-triangle-up'),
         'POA Network',
         providerType === 'poa' ? h('.check', '✓') : null,
       ]

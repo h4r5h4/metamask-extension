@@ -134,6 +134,7 @@ SendTransactionScreen.prototype.render = function () {
               conversionRate,
               currentCurrency,
               network: network,
+              showFiat: parseInt(network) !== 99,
             }),
 
           ]),

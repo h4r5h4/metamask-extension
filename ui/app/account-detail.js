@@ -186,6 +186,7 @@ AccountDetailScreen.prototype.render = function () {
             conversionRate,
             currentCurrency,
             network: network,
+            showFiat: parseInt(network) !== 99,
             style: {
               lineHeight: '7px',
               marginTop: '10px',

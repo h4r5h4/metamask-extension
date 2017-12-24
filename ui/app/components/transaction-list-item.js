@@ -67,7 +67,7 @@ TransactionListItem.prototype.render = function () {
         }
         event.stopPropagation()
         if (!transaction.hash || !isLinkable) return
-        var url = explorerLink(transaction.hash, parseInt(network))
+        var url = parseInt(network) === 99 ? `https://core-explorer.poa.network/tx/${transaction.hash}` : explorerLink(transaction.hash, parseInt(network))
         global.platform.openWindow({ url })
       },
       style: {
