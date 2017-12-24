@@ -333,7 +333,7 @@ App.prototype.renderNetworkDropdown = function () {
         },
       },
       [
-        h('.menu-icon.blue-triangle-up'),
+        h('i.fa.fa-caret-up.fa-lg.menu-icon'),
         'POA Network',
         providerType === 'poa' ? h('.check', '✓') : null,
       ]

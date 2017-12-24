@@ -111,7 +111,13 @@ Network.prototype.render = function () {
             ])
           case 'poa-network':
             return h('.network-indicator', [
-              h('.menu-icon.blue-triangle-up'),
+              h('i.fa.fa-caret-up.fa-lg', {
+                style: {
+                  margin: '10px',
+                  color: 'rgb(103, 111, 138)',
+                },
+              }),
+
               h('.network-name', {
                 style: {
                   color: '#676f8a',
